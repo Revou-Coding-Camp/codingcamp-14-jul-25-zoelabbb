@@ -197,7 +197,7 @@ Project ini mengikuti workflow development yang terstruktur:
 
 ## 📄 License
 
-© 2024 Alif Ryuu (zoelabb). All rights reserved.
+© 2025 Alif Ryuu (zoelabb). All rights reserved.
 
 ---
 

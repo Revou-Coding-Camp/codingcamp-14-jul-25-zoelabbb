@@ -15,11 +15,178 @@
     />
     <meta name="author" content="Alif Ryuu (zoelabb)" />
 
-    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <h1>Test</h1>
+    <!-- Header Navigation -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/img/logo/logo-revou.svg" alt="Logo Revou" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a href="achievement.html">Achievement</a></li>
+            <li><a href="contact.html">Message Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1 id="welcomeMessage">
+            Hi <span id="userName">Harfi</span>, Welcome To Website
+          </h1>
+          <p>Ini adalah website latihan pertama</p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">138</span>
+              <span class="stat-label">x</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">478</span>
+              <span class="stat-label">Total</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Facilitation Section -->
+      <section class="our-facilitation">
+        <div class="container">
+          <h2 class="section-title">Our Facilitation</h2>
+          <div class="facilitation-grid">
+            <div class="facility-item">
+              <div class="facility-icon">👨‍🏫</div>
+              <h3>Professional Teacher</h3>
+              <p>
+                Tenaga pengajar profesional dengan pengalaman bertahun-tahun
+                dalam bidang teknologi
+              </p>
+            </div>
+            <div class="facility-item">
+              <div class="facility-icon">⚽</div>
+              <h3>Sport Field</h3>
+              <p>
+                Lapangan olahraga lengkap untuk mendukung aktivitas fisik dan
+                rekreasi siswa
+              </p>
+            </div>
+            <div class="facility-item">
+              <div class="facility-icon">🏫</div>
+              <h3>Classroom</h3>
+              <p>
+                Ruang kelas modern dengan fasilitas multimedia untuk
+                pembelajaran interaktif
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Us Section -->
+      <section class="message-section">
+        <div class="container">
+          <h2 class="section-title">Message Us</h2>
+          <div class="message-form-container">
+            <div class="message-form">
+              <form action="#" method="post" id="messageForm">
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="birthDate">Tanggal Lahir</label>
+                  <input type="date" id="birthDate" name="birthDate" required />
+                </div>
+                <div class="form-group">
+                  <label>Jenis Kelamin</label>
+                  <div class="form-radio-group">
+                    <label>
+                      <input
+                        type="radio"
+                        name="gender"
+                        value="Laki-Laki"
+                        required
+                      />
+                      Laki-Laki
+                    </label>
+                    <label>
+                      <input
+                        type="radio"
+                        name="gender"
+                        value="Perempuan"
+                        required
+                      />
+                      Perempuan
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="message">Pesan</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+            <div class="message-preview">
+              <div class="current-time">
+                Current time: <span id="currentTime"></span>
+              </div>
+              <div class="preview-info">
+                <p>
+                  <strong>Nama:</strong>
+                  <span id="previewName">Harfi Novan</span>
+                </p>
+                <p>
+                  <strong>Tanggal Lahir:</strong>
+                  <span id="previewBirthDate">01/11/1995</span>
+                </p>
+                <p>
+                  <strong>Jenis Kelamin:</strong>
+                  <span id="previewGender">Laki - Laki</span>
+                </p>
+                <p>
+                  <strong>Pesan:</strong>
+                  <span id="previewMessage">Lucu Banget buat Website</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Alif Ryuu (zoelabb). All rights reserved.
+        </p>
+        <p>
+          Follow us on
+          <a href="https://www.instagram.com/makudonaru_">Instagram</a> |
+          <a href="https://www.linkedin.com/in/alifryuu">LinkedIn</a> |
+          <a href="https://github.com/zoelabb">GitHub</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script Here -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
